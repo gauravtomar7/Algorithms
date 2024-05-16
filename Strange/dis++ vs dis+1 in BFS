@@ -1,0 +1,15 @@
+**dis+1  THIS IS CORRECT**
+if (nrow < n && nrow >= 0 && ncol >= 0 && ncol < m && vis[nrow][ncol] != 1)
+{
+    // dis++;
+    vis[nrow][ncol] = 1;
+    q.push({{nrow, ncol}, dis + 1});
+}
+
+**dis++**
+  if (nrow < n && nrow >= 0 && ncol >= 0 && ncol < m && vis[nrow][ncol] != 1)
+{
+    dis++;
+    vis[nrow][ncol] = 1;
+    q.push({{nrow, ncol}, dis});
+}
